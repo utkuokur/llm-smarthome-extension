@@ -90,7 +90,7 @@ Logs are saved in `logs/` directory.
 ## Technical Details
 
 ### Software Stack
-* **Language:** Python 3.12
+* * **Language:** Python 3.12 recommended (3.11+ works)
 * **LLM Engine:** Ollama 0.13.5+
 * **Model:** `google/gemma-2-9b`
 * **Orchestration:** LangGraph 1.0.5
