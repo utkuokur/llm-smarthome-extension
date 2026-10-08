@@ -87,11 +87,10 @@ Logs are saved in `logs/` directory.
    - **thermostat** - Temperature control and atmosphere creation
    - **audio_system** - Music playback and volume control, atmosphere creation
 
-
 ## Technical Details
 
 ### Software Stack
-* **Language:** Python 3.11+
+* **Language:** Python 3.12
 * **LLM Engine:** Ollama 0.13.5+
 * **Model:** `google/gemma-2-9b`
 * **Orchestration:** LangGraph 1.0.5
