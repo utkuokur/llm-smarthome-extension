@@ -1,4 +1,4 @@
-from langchain_ollama import ChatOllama
+from llm_config import get_llm
 from typing import List, Optional, Dict, Any, TypedDict, Annotated
 from langgraph.graph.message import add_messages
 from langgraph.graph import StateGraph, START, END
@@ -8,7 +8,7 @@ from langchain_core.output_parsers import JsonOutputParser
 from langchain_core.prompts import PromptTemplate
 from langchain_core.messages import HumanMessage
 
-llm = ChatOllama(model="gemma2", temperature=0.0)
+llm = get_llm()
 
 # State
 class SmartHomeState(TypedDict, total=False):

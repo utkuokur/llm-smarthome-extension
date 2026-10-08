@@ -23,6 +23,19 @@ If you don't have Ollama installed:
    pip install -r requirements.txt
 ```
 
+### Using an online API instead of Ollama (optional)
+
+The model is chosen in `llm_config.py` via env vars (default: local `ollama:gemma2`).
+Copy `.env.example` to `.env` in this folder and set e.g.:
+```bash
+   LLM_MODEL=openai:gpt-4o-mini
+   OPENAI_API_KEY=sk-...
+```
+Any `provider:model` supported by LangChain's `init_chat_model` works 
+(`anthropic:...`, 
+`openai:...` + `OPENAI_BASE_URL` 
+for OpenAI-compatible services, ...).
+
 ## Running the System
 
 ### Interaction
